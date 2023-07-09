@@ -1,0 +1,574 @@
+.parent{
+display: grid;
+grid-template-columns: repeat(8, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 2px;
+grid-row-gap: 10px;
+margin: 0 5%;
+}
+.parent .story_hot:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.parent .story_hot{
+	width: 129px;
+	height: 192px;
+  position: relative;
+  transition: transform 0.5s ease-in-out; 
+}
+.parent .story_hot img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.parent .story_hot .title{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #f4f4f4;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 5px 0;
+  text-shadow: 1px 2px 2px #000;
+  display: block;
+  margin-top: 2px;
+  text-align: center;
+  font-family: 'Roboto Condensed',Tahoma,sans-serif;
+}
+.title p{
+  font-size: 12px !important;
+  font-size: inherit;
+}
+
+.full-label{
+  width: 34px;
+  height: 50px;
+  position: absolute;
+  display: block;
+  margin: 140px 0 0 -7px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 1250px){
+	.parent {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		grid-column-gap: 2px;
+		grid-row-gap: 10px;
+    padding: 0px 15px;
+	}
+	.parent .story_hot{
+		max-width: 129px;
+		max-height: 192px;
+	}
+}
+
+@media only screen and (max-width: 768px){
+  .parent{
+ 		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		grid-column-gap: 2px;
+		grid-row-gap: 10px;
+		width: 100%;
+		margin: 0;
+    padding: 0px 0px;
+	}
+	.parent .story_hot{
+		max-width: 98px;
+		max-height: 134px;
+	}
+  .table-fill1{
+    display: none;
+  }
+  #category__story{
+    display: none;
+  }
+  .full-label{
+    top:-50px;
+  }
+}
+
+.parent-1{
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 100px;
+}
+.parent-1 .story_finish{
+  background-color: #666b85;
+  height: 250px;
+  position: relative;
+  transition: transform 0.5s ease-in-out; 
+}
+
+.parent-1 .story_finish img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.caption{
+  padding: 5px;
+  text-align: center;
+  line-height: 18px;
+  bottom: -80px;
+  width: 100%;
+  position: absolute;
+  font-size: 18px !important;
+  font-family: 'Roboto Condensed',Tahoma,sans-serif;
+  /* margin: auto; */
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.label-primary{
+  background: #4a814c;
+  color: white;
+  border-radius: 20px;
+  width: 150px;
+}
+
+@media only screen and (max-width: 1250px){
+	.parent-1 {
+		display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 100px;
+	}
+}
+@media only screen and (max-width: 991px){
+	.parent-1 {
+		display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 110px;
+	}
+	.parent-1 .story_finish{
+    max-width: 230px;
+  }
+  .caption{
+    bottom: -110px;
+  }
+}
+/* The container must be positioned relative: */
+.custom-select {
+  position: relative;
+  font-family: Arial;
+  float: right;
+}
+
+.custom-select select {
+  display: none; /*hide original SELECT element: */
+}
+
+.select-selected {
+
+  margin-top: -7px;
+  width: 198px;
+  margin-left: -12px;
+}
+
+/* Style the arrow inside the select element: */
+.select-selected:after {
+  position: absolute;
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/* Point the arrow upwards when the select box is open (active): */
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/* style the items (options), including the selected item: */
+.select-items div,.select-selected {
+  color: black;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+/* Style items (options): */
+.select-items {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  border: 1px solid black;
+  background-color: #F4F4F4;
+}
+
+/* Hide the items when the select box is closed: */
+.select-hide {
+  display: none;
+}
+
+.select-items div:hover, .same-as-selected {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+/*table*/
+.table-fill {
+  background: white;
+  border-radius: 3px;
+  border-collapse: collapse;
+  height: auto;
+  margin: auto;
+  max-width: 100%;
+  padding: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  animation: float 5s infinite;
+}
+
+.table-hover tr {
+  border-top: 1px dashed #c1c3d1;
+  border-bottom: 1px dashed #c1c3d1;
+  color: #000000;
+  font-size: 16px;
+  font-weight: normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.table-hover tr:hover td {
+  background: #4e5066;
+  color: #ffffff;
+  border-top: 1px solid #22262e;
+}
+.table-hover tr:hover a {
+  background: #4e5066;
+  color: #ffffff;
+}
+
+.table-hover tr:first-child {
+  border-top: none;
+}
+
+.table-hover tr:last-child {
+  border-bottom: none;
+}
+
+.table-hover tr:nth-child(odd):hover td {
+  background: #4e5066;
+}
+.table-hover tr:last-child td:last-child {
+  border-bottom-right-radius: 3px;
+}
+.text-left {
+  background: #ffffff;
+  padding: 10px;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: 300;
+  font-size: 18px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+  border-right: 1px dotted #c1c3d1;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.text-left a{
+  color: #000000;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.text-left:last-child {
+  border-right: 0px;
+}
+
+#category_story{
+  height: 40px;
+  padding-top: 10px;
+}
+
+.breadcrumb-container{
+  height: 40px;
+  line-height: 40px;
+  color: #4E4E4E;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100% !important;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+}
+.nav-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.nav-button a {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  height: 40px;
+  width: 130px;
+  text-align: center;
+}
+.nav-button a:hover {
+  background-color: #3e8e41;
+  text-decoration: none;
+  color: #fff;
+}
+
+#chapter_select{
+  width: 150px;
+  padding-top: 0px;
+}
+
+#name__story{
+  text-transform:uppercase;
+  color: #398439;
+  padding: 30px 0px 10px 0px;
+}
+#name_story:hover{
+  border-bottom: 0px;
+  text-decoration: none;
+}
+#content-story{
+  margin-top: 50px;
+  display: block;
+}
+#content-story p{
+  font-size: 24px;
+}
+#img-product{
+  padding: 0px 20px 20px 20px;
+}
+@media only screen and (max-width: 991px){
+  #img-product{
+    text-align: center;
+  }
+  .info{
+    margin: 0 auto;
+  }
+}
+.info{
+  margin: 15px 0px;
+}
+.info div{
+  display: flex;
+}
+.info h3{
+  font-size: 14px !important;
+  font-weight: bold;
+}
+.info a{
+  font-weight: initial;
+  font-size: 13px !important;
+  color: #22262e;
+  margin-left: 10px;
+}
+.info span{
+  font-size: 13px !important;
+  color: #22262e;
+  margin-left: 10px;
+}
+.rate{
+  text-align: -webkit-center;
+}
+#name-product{
+  padding-left: 50px;
+}
+#l-chapters{
+  margin-top: 50px;
+  padding-left: 50px;
+}
+
+.l-chapters a{
+  text-decoration: none;
+  color: #22262e !important;
+}
+@media only screen and (max-width: 991px){
+  #same__author{
+    display: none;
+  }
+}
+.list-chapter a{
+  color: #22262e;
+}
+
+.top-content{
+  width: 80%;
+  margin: 100px auto 50px;
+}
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Show 4th slide on md if col-md-4*/
+  .carousel-inner
+    .active.col-md-4.carousel-item
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -33.3333%; /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  /* Show 3rd slide on sm if col-sm-6*/
+  .carousel-inner
+    .active.col-sm-6.carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -50%; /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+}
+@media (min-width: 576px) {
+  .carousel-item {
+    margin-right: 0;
+  }
+  /* show 2 items */
+  .carousel-inner .active + .carousel-item {
+    display: block;
+  }
+  .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+  .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+    + .carousel-item {
+    transition: none;
+  }
+  .carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+  /* left or forward direction */
+  .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+  .carousel-item-next.carousel-item-left + .carousel-item,
+  .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  /* farthest right hidden item must be also positioned for animations */
+  .carousel-inner .carousel-item-prev.carousel-item-right {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  /* right or prev direction */
+  .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+  .carousel-item-prev.carousel-item-right + .carousel-item,
+  .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+/* MD */
+@media (min-width: 768px) {
+  /* show 3rd of 3 item slide */
+  .carousel-inner .active + .carousel-item + .carousel-item {
+    display: block;
+  }
+  .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+    + .carousel-item
+    + .carousel-item {
+    transition: none;
+  }
+  .carousel-inner .carousel-item-next {
+    position: relative;
+    transform: translate3d(0, 0, 0);
+  }
+  /* left or forward direction */
+  .carousel-item-next.carousel-item-left
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  /* right or prev direction */
+  .carousel-item-prev.carousel-item-right
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}
+/* LG */
+@media (min-width: 991px) {
+  /* show 4th item */
+  .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+    display: block;
+  }
+  .carousel-inner
+    .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    transition: none;
+  }
+  /* Show 5th slide on lg if col-lg-3 */
+  .carousel-inner
+    .active.col-lg-3.carousel-item
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: absolute;
+    top: 0;
+    right: -25%; /*change this with javascript in the future*/
+    z-index: -1;
+    display: block;
+    visibility: visible;
+  }
+  /* left or forward direction */
+  .carousel-item-next.carousel-item-left
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: relative;
+    transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  /* right or prev direction //t - previous slide direction last item animation fix */
+  .carousel-item-prev.carousel-item-right
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item
+    + .carousel-item {
+    position: relative;
+    transform: translate3d(100%, 0, 0);
+    visibility: visible;
+    display: block;
+    visibility: visible;
+  }
+}

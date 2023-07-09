@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<title>Forms - Atlantis Lite Bootstrap 4 Admin Dashboard</title>
+	<meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+	<link rel="icon" href="img/icon.ico" type="image/x-icon"/>
+	<!-- Fonts and icons -->
+	<script src="../js/plugin/webfont/webfont.min.js"></script>
+	<script>
+		WebFont.load({
+			google: {"families":["Lato:300,400,700,900"]},
+			custom: {"families":["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands", "simple-line-icons"], urls: ['../css/fonts.min.css']},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/atlantis.min.css">
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link rel="stylesheet" href="css/demo.css">
+</head>
+<body>
+	<div class="wrapper sidebar_minimize">
+		<div class="main-header">
+			<!-- Logo Header -->
+			<div class="logo-header" data-background-color="blue">
+				
+				<a href="../index.html" class="logo">
+					<img src="../img/logo.svg" alt="navbar brand" class="navbar-brand">
+				</a>
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+						<i class="icon-menu"></i>
+					</span>
+				</button>
+				<button class="topbar-toggler more"><i class="icon-options-vertical"></i></button>
+				<div class="nav-toggle">
+					<button class="btn btn-toggle toggle-sidebar">
+						<i class="icon-menu"></i>
+					</button>
+				</div>
+			</div>
+			<!-- End Logo Header -->
+
+			<!-- Navbar Header -->
+			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">			
+				<div class="container-fluid">
+					<div class="collapse" id="search-nav">
+						<form class="navbar-left navbar-form nav-search mr-md-3">
+							<div class="input-group">
+								<div class="input-group-prepend">
+									<button type="submit" class="btn btn-search pr-1">
+										<i class="fa fa-search search-icon"></i>
+									</button>
+								</div>
+								<input type="text" placeholder="Search ..." class="form-control">
+							</div>
+						</form>
+					</div>
+					
+				</div>
+			</nav>
+			<!-- End Navbar -->
+		</div>
+		<!-- Sidebar -->
+		<div class="sidebar sidebar-style-2">
+			<div class="sidebar-wrapper scrollbar scrollbar-inner">
+				<div class="sidebar-content">
+					<div class="user">
+						<div class="avatar-sm float-left mr-2">
+							<img src="../img/profile.jpg" alt="..." class="avatar-img rounded-circle">
+						</div>
+						<div class="info">
+							<a data-toggle="collapse" href="#collapseExample" aria-expanded="true">
+								<span>
+									Hizrian
+									<span class="user-level">Administrator</span>
+									<span class="caret"></span>
+								</span>
+							</a>
+							<div class="clearfix"></div>
+
+							<div class="collapse in" id="collapseExample">
+								<ul class="nav">
+									<li>
+										<a href="#profile">
+											<span class="link-collapse">My Profile</span>
+										</a>
+									</li>
+									<li>
+										<a href="#edit">
+											<span class="link-collapse">Edit Profile</span>
+										</a>
+									</li>
+									<li>
+										<a href="#settings">
+											<span class="link-collapse">Settings</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<ul class="nav nav-primary">
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#dashboard" class="collapsed" aria-expanded="false">
+								<i class="fas fa-home"></i>
+								<p>Dashboard</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="dashboard">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="../../demo1/index.html">
+											<span class="sub-item">Dashboard 1</span>
+										</a>
+									</li>
+									<li>
+										<a href="../../demo2/index.html">
+											<span class="sub-item">Dashboard 2</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-section">
+							<span class="sidebar-mini-icon">
+								<i class="fa fa-ellipsis-h"></i>
+							</span>
+							<h4 class="text-section">Components</h4>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#base">
+								<i class="fas fa-layer-group"></i>
+								<p>Base</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="base">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="../components/avatars.html">
+											<span class="sub-item">Avatars</span>
+										</a>
+									</li>
+									<li>
+										<a href="../components/buttons.html">
+											<span class="sub-item">Buttons</span>
+										</a>
+									</li>
+									<li>
+										<a href="../components/gridsystem.html">
+											<span class="sub-item">Grid System</span>
+										</a>
+									</li>
+									<li>
+										<a href="../components/panels.html">
+											<span class="sub-item">Panels</span>
+										</a>
+									</li>
+									<li>
+										<a href="../components/notifications.html">
+											<span class="sub-item">Notifications</span>
+										</a>
+									</li>
+									<li>
+										<a href="../components/sweetalert.html">
+											<span class="sub-item">Sweet Alert</span>
+										</a>
+									</li>
+									<li>
+										<a href="../components/font-awesome-icons.html">
+											<span class="sub-item">Font Awesome Icons</span>
+										</a>
+									</li>
+									<li>
+										<a href="../components/simple-line-icons.html">
+											<span class="sub-item">Simple Line Icons</span>
+										</a>
+									</li>
+									<li>
+										<a href="../components/flaticons.html">
+											<span class="sub-item">Flaticons</span>
+										</a>
+									</li>
+									<li>
+										<a href="../components/typography.html">
+											<span class="sub-item">Typography</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#sidebarLayouts">
+								<i class="fas fa-th-list"></i>
+								<p>Sidebar Layouts</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="sidebarLayouts">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="../sidebar-style-1.html">
+											<span class="sub-item">Sidebar Style 1</span>
+										</a>
+									</li>
+									<li>
+										<a href="../overlay-sidebar.html">
+											<span class="sub-item">Overlay Sidebar</span>
+										</a>
+									</li>
+									<li>
+										<a href="../compact-sidebar.html">
+											<span class="sub-item">Compact Sidebar</span>
+										</a>
+									</li>
+									<li>
+										<a href="../static-sidebar.html">
+											<span class="sub-item">Static Sidebar</span>
+										</a>
+									</li>
+									<li>
+										<a href="../icon-menu.html">
+											<span class="sub-item">Icon Menu</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item active submenu">
+							<a data-toggle="collapse" href="#forms">
+								<i class="flaticon-home"></i>
+								<p>Trang chủ</p>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#tables">
+								<i class="fas fa-table"></i>
+								<p>Tables</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="tables">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="../tables/tables.html">
+											<span class="sub-item">Basic Table</span>
+										</a>
+									</li>
+									<li>
+										<a href="../tables/datatables.html">
+											<span class="sub-item">Datatables</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#maps">
+								<i class="fas fa-map-marker-alt"></i>
+								<p>Maps</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="maps">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="../maps/jqvmap.html">
+											<span class="sub-item">JQVMap</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#charts">
+								<i class="far fa-chart-bar"></i>
+								<p>Charts</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="charts">
+								<ul class="nav nav-collapse">
+									<li>
+										<a href="../charts/charts.html">
+											<span class="sub-item">Chart Js</span>
+										</a>
+									</li>
+									<li>
+										<a href="../charts/sparkline.html">
+											<span class="sub-item">Sparkline</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="../widgets.html">
+								<i class="fas fa-desktop"></i>
+								<p>Widgets</p>
+								<span class="badge badge-success">4</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="main-panel">
+			<div class="content">
+				<div class="container breadcrumb-container">
+                    <ul class="breadcrumbs">
+                        <li class="nav-home">
+                            <a href="#">
+                                <i class="flaticon-home"></i>
+                            </a>
+                        </li>
+                        <li class="separator">
+                            <i class="flaticon-right-arrow"></i>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Base</a>
+                        </li>
+                        <li class="separator">
+                            <i class="flaticon-right-arrow"></i>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#">Line Awesome</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-10 ml-auto mr-auto" style="margin-top: 30px; ">
+                    <h2 style="border-bottom: 1px solid rgba(0, 0, 0, 0.167);">THÔNG TIN TRUYỆN</h2>
+					<div class="row" style="margin-top: 30px;">
+						<div class="col-lg-3" id="img-product">
+							<img src="img/product/example3-300x300.jpg" width="215px" height="320px" alt="ảnh truyện" >	
+							
+							<div class="info">
+								<div>
+								   <h3>Tác giả:</h3>
+								   <a itemprop="author" href="https://truyenfull.vn/tac-gia/lu-lai-phat-to/" title="Lư Lai Phật Tổ">Lư Lai Phật Tổ</a>
+								</div>
+								<div>
+								   <h3>Thể loại:</h3>
+								   <a itemprop="genre" href="https://truyenfull.vn/the-loai/ngon-tinh/" title="Ngôn Tình">Ngôn Tình</a>, <a itemprop="genre" href="https://truyenfull.vn/the-loai/do-thi/" title="Đô Thị">Đô Thị</a>
+								</div>
+								<div>
+								   <h3>Nguồn:</h3>
+								   <span class="source">Vietpub </span>
+								</div>
+								<div>
+								   <h3>Trạng thái:</h3>
+								   <span class="text-primary">Đang ra</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6" >
+							<div id="name-product">
+								<center><h2 style="border-bottom: 1px solid rgba(0, 0, 0, 0.167);"><b>CHỒNG ĐỘC TÀI CỨ CƯỠNG HÔN TÔI</b></h2></center>
+								<div class="rate">
+									<div class="rate-holder" data-score="4.6" style="cursor: pointer;"><img alt="1" src="//static.8cache.com/lib/raty/images/star-on.png" title="Không còn gì để nói...">&nbsp;<img alt="2" src="//static.8cache.com/lib/raty/images/star-on.png" title="WTF">&nbsp;<img alt="3" src="//static.8cache.com/lib/raty/images/star-on.png" title="Cái gì thế này ?!">&nbsp;<img alt="4" src="//static.8cache.com/lib/raty/images/star-on.png" title="Haizz">&nbsp;<img alt="5" src="//static.8cache.com/lib/raty/images/star-half.png" title="Tạm">&nbsp;<img alt="6" src="//static.8cache.com/lib/raty/images/star-off.png" title="Cũng được">&nbsp;<img alt="7" src="//static.8cache.com/lib/raty/images/star-off.png" title="Khá đấy">&nbsp;<img alt="8" src="//static.8cache.com/lib/raty/images/star-off.png" title="Được">&nbsp;<img alt="9" src="//static.8cache.com/lib/raty/images/star-off.png" title="Hay">&nbsp;<img alt="10" src="//static.8cache.com/lib/raty/images/star-off.png" title="Tuyệt đỉnh!"><input name="score" type="hidden" value="4.6"></div>
+									<em class="rate-text"></em>
+									<div class="small" itemprop="aggregateRating" itemscope="" itemtype="https://schema.org/AggregateRating"><em>Đánh giá: <strong><span itemprop="ratingValue">4.6</span></strong>/<span class="text-muted" itemprop="bestRating">10</span> từ <strong><span itemprop="ratingCount">25</span> lượt</strong></em></div>
+								</div>
+								<p>
+									Ở rể tại Hạ gia, Trần Phong như một kẻ vô dụng trong mắt cả nhà vợ, tất nhiên ai ai cũng khinh thường anh, khi anh chỉ làm công việc giao hàng với đồng lương bèo bọt.
+	
+									Không hiểu sao anh lại có thể làm chồng của cô tiểu thư xinh đẹp, giàu có Hạ Mộng Dao nữa...
+	
+									Có điều, người ta vẫn bảo, đừng coi thường bất kì ai, bởi vì Trần Phong thật sự là người thừa kế của một đại gia tộc tại thủ đô. Chỉ là điều gì khiến anh che giấu thân phận thật sự của mình, lại là ở rể, lại là di làm công việc giao hàng????
+								</p>
+							</div>
+							<div id="l-chapters">
+								<p style="border-bottom: 1px solid rgba(0, 0, 0, 0.167);">CÁC CHƯƠNG MỚI NHẤT</p>
+								<ul class="l-chapters">
+									<li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-924/" title="Chương 924: Kế hoạch đối phó Mạc Lang"><span class="chapter-text"><span>Chương </span></span>924: Kế hoạch đối phó Mạc Lang</a></li>
+									<li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-923/" title="Chương 923: Cô gái nói dối"><span class="chapter-text"><span>Chương </span></span>923: Cô gái nói dối</a></li>
+									<li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-922/" title="Chương 922: Được Chu Chỉ Nhi cứu"><span class="chapter-text"><span>Chương </span></span>922: Được Chu Chỉ Nhi cứu</a></li>
+									<li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-921/" title="Chương 921: Bị nhốt"><span class="chapter-text"><span>Chương </span></span>921: Bị nhốt</a></li>
+									<li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-920/" title="Chương 920: Mật thất"><span class="chapter-text"><span>Chương </span></span>920: Mật thất</a></li>
+								 </ul>
+							</div>
+						</div>
+						<div class="col-lg-3" id="same__author">
+							<div class="card">
+								<table class="table-fill1">
+									<thead>
+										<tr>
+											<th colspan="2"><center>Truyện cùng tác giả</center></th>
+										</tr>
+									</thead>
+								    <tbody class="table-hover1">
+										<tr>
+											<td class="text-left1">January</td>
+											<td class="text-left1">$ 50,000.00</td>
+										</tr>
+										<tr>
+											<td class="text-left1">January</td>
+											<td class="text-left1">$ 50,000.00</td>
+										</tr>
+								    </tbody>
+								</table>
+							</div>
+						</div>
+					</div><br>
+					<h2 style="border-bottom: 1px solid rgba(0, 0, 0, 0.167);">DANH SÁCH CHƯƠNG</h2>
+					<div class="row">
+						<div class="col-xs-12 col-sm-6 col-md-6">
+						   <ul class="list-chapter">
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-1/" title="Long Tế - Chương 1: Gia sản nghìn tỉ"><span class="chapter-text"><span>Chương </span></span>1: Gia sản nghìn tỉ</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-2/" title="Long Tế - Chương 2: Vụ tai nạn ly kỳ"><span class="chapter-text"><span>Chương </span></span>2: Vụ tai nạn ly kỳ</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-3/" title="Long Tế - Chương 3: Ly hôn"><span class="chapter-text"><span>Chương </span></span>3: Ly hôn</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-4/" title="Long Tế - Chương 4: Quyết không để cô ấy hối hận"><span class="chapter-text"><span>Chương </span></span>4: Quyết không để cô ấy hối hận</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-5/" title="Long Tế - Chương 5: ： Người giàu nhất Thương Châu"><span class="chapter-text"><span>Chương </span></span>5: ： Người giàu nhất Thương Châu</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-6/" title="Long Tế - Chương 6: Cậu Trần"><span class="chapter-text"><span>Chương </span></span>6: Cậu Trần</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-7/" title="Long Tế - Chương 7: Dát vàng lên người"><span class="chapter-text"><span>Chương </span></span>7: Dát vàng lên người</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-8/" title="Long Tế - Chương 8: Xe điện của cậu đâu"><span class="chapter-text"><span>Chương </span></span>8: Xe điện của cậu đâu</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-9/" title="Long Tế - Chương 9: Koenigsegg"><span class="chapter-text"><span>Chương </span></span>9: Koenigsegg</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-10/" title="Long Tế - Chương 10: Năm mươi tỉ xưa nay chưa từng có"><span class="chapter-text"><span>Chương </span></span>10: Năm mươi tỉ xưa nay chưa từng có</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-11/" title="Long Tế - Chương 11: Đứng đi vào, nằm đi ra"><span class="chapter-text"><span>Chương </span></span>11: Đứng đi vào, nằm đi ra</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-12/" title="Long Tế - Chương 12: Nằm mơ giữa ban ngày"><span class="chapter-text"><span>Chương </span></span>12: Nằm mơ giữa ban ngày</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-13/" title="Long Tế - Chương 13: Tin anh không?"><span class="chapter-text"><span>Chương </span></span>13: Tin anh không?</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-14/" title="Long Tế - Chương 14: Tại sao phải nghỉ ngơi"><span class="chapter-text"><span>Chương </span></span>14: Tại sao phải nghỉ ngơi</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-15/" title="Long Tế - Chương 15: Ngủ riêng"><span class="chapter-text"><span>Chương </span></span>15: Ngủ riêng</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-16/" title="Long Tế - Chương 16: Sửa bóng đèn"><span class="chapter-text"><span>Chương </span></span>16: Sửa bóng đèn</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-17/" title="Long Tế - Chương 17: Bị cắm sừng"><span class="chapter-text"><span>Chương </span></span>17: Bị cắm sừng</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-18/" title="Long Tế - Chương 18: Khiêu khích Hạ Vân Thịnh"><span class="chapter-text"><span>Chương </span></span>18: Khiêu khích Hạ Vân Thịnh</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-19/" title="Long Tế - Chương 19: Báu vật cực phẩm"><span class="chapter-text"><span>Chương </span></span>19: Báu vật cực phẩm</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-20/" title="Long Tế - Chương 20: Giận sôi gan"><span class="chapter-text"><span>Chương </span></span>20: Giận sôi gan</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-21/" title="Long Tế - Chương 21: Tay trái hay tay phải"><span class="chapter-text"><span>Chương </span></span>21: Tay trái hay tay phải</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-22/" title="Long Tế - Chương 22: Mua một bài học"><span class="chapter-text"><span>Chương </span></span>22: Mua một bài học</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-23/" title="Long Tế - Chương 23: Tình thế xoay chuyển"><span class="chapter-text"><span>Chương </span></span>23: Tình thế xoay chuyển</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-24/" title="Long Tế - Chương 24: Thiên vị"><span class="chapter-text"><span>Chương </span></span>24: Thiên vị</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-25/" title="Long Tế - Chương 25: Thật lòng"><span class="chapter-text"><span>Chương </span></span>25: Thật lòng</a></li>
+						   </ul>
+						</div>
+						<div class="col-xs-12 col-sm-6 col-md-6">
+						   <ul class="list-chapter">
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-26/" title="Long Tế - Chương 26: Cô ấy là vợ tôi"><span class="chapter-text"><span>Chương </span></span>26: Cô ấy là vợ tôi</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-27/" title="Long Tế - Chương 27: Vào Công ty Đỉnh Phong"><span class="chapter-text"><span>Chương </span></span>27: Vào Công ty Đỉnh Phong</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-28/" title="Long Tế - Chương 28: Thái độ cầu xin người khác"><span class="chapter-text"><span>Chương </span></span>28: Thái độ cầu xin người khác</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-29/" title="Long Tế - Chương 29: Hạ Vân Thịnh đích thân tới"><span class="chapter-text"><span>Chương </span></span>29: Hạ Vân Thịnh đích thân tới</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-30/" title="Long Tế - Chương 30: Hổ dữ say ngủ"><span class="chapter-text"><span>Chương </span></span>30: Hổ dữ say ngủ</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-31/" title="Long Tế - Chương 31: Ma nữ Từ Phi Dung"><span class="chapter-text"><span>Chương </span></span>31: Ma nữ Từ Phi Dung</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-32/" title="Long Tế - Chương 32: Tiền lương giao hàng"><span class="chapter-text"><span>Chương </span></span>32: Tiền lương giao hàng</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-33/" title="Long Tế - Chương 33: Suy nghĩ của Từ Phi Dung"><span class="chapter-text"><span>Chương </span></span>33: Suy nghĩ của Từ Phi Dung</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-34/" title="Long Tế - Chương 34: Xé nát mồm của mày"><span class="chapter-text"><span>Chương </span></span>34: Xé nát mồm của mày</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-35/" title="Long Tế - Chương 35: Anh em cây khế"><span class="chapter-text"><span>Chương </span></span>35: Anh em cây khế</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-36/" title="Long Tế - Chương 36: Người đàn ông phía sau cô ta"><span class="chapter-text"><span>Chương </span></span>36: Người đàn ông phía sau cô ta</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-37/" title="Long Tế - Chương 37: Bà mợ cực phẩm"><span class="chapter-text"><span>Chương </span></span>37: Bà mợ cực phẩm</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-38/" title="Long Tế - Chương 38: Não có vấn đề"><span class="chapter-text"><span>Chương </span></span>38: Não có vấn đề</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-39/" title="Long Tế - Chương 39: Camera hành trình"><span class="chapter-text"><span>Chương </span></span>39: Camera hành trình</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-40/" title="Long Tế - Chương 40: Tôn Quế Phương tới nhà"><span class="chapter-text"><span>Chương </span></span>40: Tôn Quế Phương tới nhà</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-41/" title="Long Tế - Chương 41: Bị đánh không được đánh lại"><span class="chapter-text"><span>Chương </span></span>41: Bị đánh không được đánh lại</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-42/" title="Long Tế - Chương 42: Quỳ xuống xin lỗi"><span class="chapter-text"><span>Chương </span></span>42: Quỳ xuống xin lỗi</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-43/" title="Long Tế - Chương 43: Phải thêm tiền"><span class="chapter-text"><span>Chương </span></span>43: Phải thêm tiền</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-44/" title="Long Tế - Chương 44: Ngủ ngoài đường"><span class="chapter-text"><span>Chương </span></span>44: Ngủ ngoài đường</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-45/" title="Long Tế - Chương 45: Anh làm gì được tôi?"><span class="chapter-text"><span>Chương </span></span>45: Anh làm gì được tôi?</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-46/" title="Long Tế - Chương 46: Đấu giá"><span class="chapter-text"><span>Chương </span></span>46: Đấu giá</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-47/" title="Long Tế - Chương 47: Tiếng xấu đồn xa"><span class="chapter-text"><span>Chương </span></span>47: Tiếng xấu đồn xa</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-48/" title="Long Tế - Chương 48: Buổi bán đấu giá"><span class="chapter-text"><span>Chương </span></span>48: Buổi bán đấu giá</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-49/" title="Long Tế - Chương 49: Người con gái còn trinh"><span class="chapter-text"><span>Chương </span></span>49: Người con gái còn trinh</a></li>
+							  <li><span class="glyphicon glyphicon-certificate"></span> <a href="https://truyenfull.vn/long-te-403390/chuong-50/" title="Long Tế - Chương 50: Cạnh tranh khốc liệt"><span class="chapter-text"><span>Chương </span></span>50: Cạnh tranh khốc liệt</a></li>
+						   </ul>
+						</div>
+					</div>
+					<br><h2 style="border-bottom: 1px solid rgba(0, 0, 0, 0.167);">BÌNH LUẬN TRUYỆN</h2>
+					<div id="fb-root"></div>
+					<script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v16.0&appId=5372383886195743&autoLogAppEvents=1" nonce="glmvcJHq"></script>
+					<div class="fb-comments" data-href="https://developers.facebook.com/docs/plugins/comments#configurator" data-width="900" data-numposts="5"></div>
+				</div>
+			</div>
+			<footer class="footer">
+				<div class="container-fluid">
+					<nav class="pull-left">
+						<ul class="nav">
+							<li class="nav-item">
+								<a class="nav-link" href="https://www.themekita.com">
+									ThemeKita
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									Liên hệ
+								</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">
+									Trợ giúp
+								</a>
+							</li>
+						</ul>
+					</nav>
+					<div class="copyright ml-auto">
+						<a>Copyright &copy; <script>document.write(new Date().getFullYear());</script><i class="fa fa-heart heart text-danger"></i> by Vũ Hoàng Hiên</a>
+					</div>				
+				</div>
+			</footer>	
+		</div>
+		
+		
+		<!-- Custom template | don't include it in your project! -->
+		<div class="custom-template">
+			<div class="title">Settings</div>
+			<div class="custom-content">
+				<div class="switcher">
+					<div class="switch-block">
+						<h4>Logo Header</h4>
+						<div class="btnSwitch">
+							<button type="button" class="changeLogoHeaderColor" data-color="dark"></button>
+							<button type="button" class="selected changeLogoHeaderColor" data-color="blue"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="purple"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="light-blue"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="green"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="orange"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="red"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="white"></button>
+							<br/>
+							<button type="button" class="changeLogoHeaderColor" data-color="dark2"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="blue2"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="purple2"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="light-blue2"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="green2"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="orange2"></button>
+							<button type="button" class="changeLogoHeaderColor" data-color="red2"></button>
+						</div>
+					</div>
+					<div class="switch-block">
+						<h4>Navbar Header</h4>
+						<div class="btnSwitch">
+							<button type="button" class="changeTopBarColor" data-color="dark"></button>
+							<button type="button" class="changeTopBarColor" data-color="blue"></button>
+							<button type="button" class="changeTopBarColor" data-color="purple"></button>
+							<button type="button" class="changeTopBarColor" data-color="light-blue"></button>
+							<button type="button" class="changeTopBarColor" data-color="green"></button>
+							<button type="button" class="changeTopBarColor" data-color="orange"></button>
+							<button type="button" class="changeTopBarColor" data-color="red"></button>
+							<button type="button" class="changeTopBarColor" data-color="white"></button>
+							<br/>
+							<button type="button" class="changeTopBarColor" data-color="dark2"></button>
+							<button type="button" class="selected changeTopBarColor" data-color="blue2"></button>
+							<button type="button" class="changeTopBarColor" data-color="purple2"></button>
+							<button type="button" class="changeTopBarColor" data-color="light-blue2"></button>
+							<button type="button" class="changeTopBarColor" data-color="green2"></button>
+							<button type="button" class="changeTopBarColor" data-color="orange2"></button>
+							<button type="button" class="changeTopBarColor" data-color="red2"></button>
+						</div>
+					</div>
+					<div class="switch-block">
+						<h4>Sidebar</h4>
+						<div class="btnSwitch">
+							<button type="button" class="selected changeSideBarColor" data-color="white"></button>
+							<button type="button" class="changeSideBarColor" data-color="dark"></button>
+							<button type="button" class="changeSideBarColor" data-color="dark2"></button>
+						</div>
+					</div>
+					<div class="switch-block">
+						<h4>Background</h4>
+						<div class="btnSwitch">
+							<button type="button" class="changeBackgroundColor" data-color="bg2"></button>
+							<button type="button" class="changeBackgroundColor selected" data-color="bg1"></button>
+							<button type="button" class="changeBackgroundColor" data-color="bg3"></button>
+							<button type="button" class="changeBackgroundColor" data-color="dark"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="custom-toggle">
+				<i class="flaticon-settings"></i>
+			</div>
+		</div>
+		<!-- End Custom template -->
+	</div>
+	<!--   Core JS Files   -->
+	<script src="js/core/jquery.3.2.1.min.js"></script>
+	<script src="js/core/popper.min.js"></script>
+	<script src="js/core/bootstrap.min.js"></script>
+	<!-- jQuery UI -->
+	<script src="js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+	
+	<!-- jQuery Scrollbar -->
+	<script src="js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+	<!-- Atlantis JS -->
+	<script src="js/atlantis.min.js"></script>
+	<!-- Atlantis DEMO methods, don't include it in your project! -->
+	<script src="js/setting-demo2.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
